@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-ranking.css">
+    <title>Renove - Ranking</title>
+</head>
+<body>
+    <header>
+        <div class="container-grid topo">
+            <img class="logo-renove" src="img/logo.png" alt="Logo Renove">
+            <nav>
+                <ul class="menu" >
+                    <li><a href="index.html">A Renove</a></li>
+                    <li><a href="missoes.html">Missões</a></li>
+                    <li><a href="ranking.html">Ranking</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="rankings" >
+            <div class="banner-ranking">
+                <div class="container-grid conteudo-banner-ranking">
+                    <div class="texto-banner-ranking">
+                        <h1>Rankings</h1>
+                    </div>
+                </div>
+            </div>
+            <h2 class="titulo-geral container-grid">Geral</h2>
+            <div class="ranking-geral container-grid">
+                <table>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Turmas</th>
+                        <th>Pontos</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Turma A</td>
+                        <td>2.250</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Turma B</td>
+                        <td>2.100</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Turma C</td>
+                        <td>1.100</td>
+                    </tr>
+                    <tr class="tabela-extensa" >
+                        <td>4</td>
+                        <td>Turma D</td>
+                        <td>320</td>
+                    </tr>
+                    <tr class="tabela-extensa" >
+                        <td>5</td>
+                        <td>Turma E</td>
+                        <td>320</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="botao-mais-1">
+                <button  id="botao-mais1">
+                    <p id="mais-info1" class="mais-info1">+</p>
+                </button>
+            </div>
+            <h2 class="titulo-jogadores container-grid">Jogadores</h2>
+            <div class="ranking-jogadores container-grid">
+                <table>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>Pontos</th>
+                    </tr>
+                    <tr>
+                    <td style="background-color: gold;" >1</td>
+                        <td>Ananda Terzi</td>
+                        <td>820</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: silver;">2</td>
+                        <td>Carol Queiroz</td>
+                        <td>420</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #D09375;">3</td>
+                        <td>David Estudioso</td>
+                        <td>320</td>
+                    </tr>
+                    <tr class="tabela-extensa-jogadores">
+                        <td>4</td>
+                        <td>Paulo Porto</td>
+                        <td>240</td>
+                    </tr>
+                    <tr class="tabela-extensa-jogadores">
+                        <td>5</td>
+                        <td>Diegão</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="botao-mais-2">
+                <button  id="botao-mais2">
+                    <p id="mais-info2" class="mais-info2">+</p>
+                </button>
+            </div>
+            <h2 class="titulo-tempo container-grid">Tempo</h2>
+            <div class="tempo container-grid">
+                <p>Essa Gamificação tem X dias para sua conclusão.</p>
+                <div class="progress-bar barra" >
+                    <p>70%</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-grid conteudo-footer">
+            <p>Todos os direitos reservados © Unnamed 2020</p>
+        </div>
+    </footer>
+    <script>
+        var botao1 = document.getElementById("botao-mais1");
+        botao1.addEventListener("click", mostrarTabela)
+        
+        var textoBotao1 = document.getElementById("mais-info1")
+        
+        function mostrarTabela() {
+            var linhasTabela = document.getElementsByClassName("tabela-extensa");
+
+            if(linhasTabela[0].style.display === "none"){
+                botao1.innerHTML = '<p class="menos-info1">-</p>';
+                
+                for (var i = 0; i < linhasTabela.length; i++) {
+                    linhasTabela[i].style.display = "table-row";
+                }
+            } else {
+                botao1.innerHTML = '<p id="mais-info1">+</p>';
+                for (var i = 0; i < linhasTabela.length; i++) {
+                    linhasTabela[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script>
+        var botao2 = document.getElementById("botao-mais2");
+        botao2.addEventListener("click", mostrarTabela)
+
+        var textoBotao2 = document.getElementById("mais-info2")
+        
+        function mostrarTabela() {
+            var linhasTabela = document.getElementsByClassName("tabela-extensa-jogadores");
+
+            if(linhasTabela[0].style.display === "none"){
+                botao2.innerHTML = '<p class="menos-info2">-</p>';
+
+                for (var i = 0; i < linhasTabela.length; i++) {
+                    linhasTabela[i].style.display = "table-row";
+                }
+            } else {
+                botao2.innerHTML = '<p id="mais-info2">+</p>';
+                for (var i = 0; i < linhasTabela.length; i++) {
+                    linhasTabela[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

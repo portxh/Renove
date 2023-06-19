@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 115px;
+    background-color: #79C58A;
+}
+
+main {
+    background-image: url(../img/background.png);
+    height: 1495px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: auto;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-renove {
+    width: 170px;
+    align-items: center;
+}
+
+.topo nav {
+    width: 600px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.menu a:hover {
+    color: #947AFF;
+}
+
+
+/* .banner-contato {
+    height: 1490px;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+} */
+
+.conteudo-banner-contato {
+    height: 100%;
+}
+
+.texto-banner-contato {
+    height: 100%;
+    width: 1040px;
+    color: white;
+    padding-top: 165px;
+}
+
+.texto-banner-contato h1 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: -0.06em;
+}
+
+.formulario {
+    margin-top: 70px;
+    height: 750px;
+    background: #79C58A;
+    border-radius: 25px;
+}
+
+form {
+    padding-top: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario input[type=text] {
+    height: 95px;
+    width: 795px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 25px;
+}
+
+.formulario input[type=text]::placeholder{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgba(35, 51, 26, 0.5);
+}
+
+.formulario input[type=email] {
+    height: 95px;
+    width: 795px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 25px;
+}
+
+.formulario input[type=email]::placeholder{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgba(35, 51, 26, 0.5);
+}
+
+.formulario #Mensagem {
+    width: 795px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    height: 245px;
+    margin-bottom: 65px;
+    padding: 25px
+}
+
+.formulario #Mensagem::placeholder{
+    color: rgba(35, 51, 26, 0.5);
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.input-padrao{
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border-radius: 25px;
+    background: #F4F1F1;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: 0;
+    font-family: 'Comfortaa', cursive;
+}
+  
+  .enviar{
+    border: solid 1px #947AFF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 235px;
+    padding: 15px 0 15px 0;
+    background-color: #79C58A;
+    color: #947AFF;
+    border-radius: 25px;
+    border-color: #947AFF;
+    cursor: pointer;
+}
+  
+  .enviar:hover{
+    background: #947AFF;
+    color: white;
+}
+
+.contatos-extras {
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+  .telefone {
+    width: 435px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.telefone h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.telefone p {
+    margin-top: 40px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    color: white;
+}
+
+.email {
+    width: 480px;
+    display: flex;
+}
+
+.email h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.email p {
+    
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    color: white;
+}
+
+.redes-sociais {
+    margin-left: 575px;
+    margin-top: -45px;
+}
+
+.redes-sociais img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #79C58A;
+    height: 60px;
+}
+
+.conteudo-footer {
+    height: 100%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-footer p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    
+}

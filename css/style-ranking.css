@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 115px;
+    background-color: #79C58A;
+}
+
+/* main {
+
+}*/
+
+.container-grid {
+    width: 1200px;
+    margin: auto;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-renove {
+    width: 170px;
+    align-items: center;
+}
+
+.topo nav {
+    width: 600px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.menu a:hover {
+    color: #947AFF;
+}
+
+
+.rankings {
+    background-repeat: repeat-x;
+    background-image: url(../img/background.png);
+    background-position: center;
+    align-items: center;
+    padding-bottom: 180px;
+}
+
+.conteudo-banner-ranking {
+    height: 100%;
+}
+
+.texto-banner-ranking {
+    height: 100%;
+    color: white;
+    padding-top: 165px;
+    align-items: center;
+}
+
+.texto-banner-ranking h1 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: -0.06em;
+}
+
+.titulo-geral{
+    margin-top: 80px;
+    margin-bottom: 55px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: -0.06em;
+}
+
+.ranking-geral {
+    display: flex;
+    justify-content: center;
+}
+
+.ranking-geral table {
+    width: 100%;
+    border-spacing: 20px 5px;;
+    border-collapse: separate;
+}
+
+.ranking-geral tr {
+    height: 90px;
+}
+
+.ranking-geral th {
+    background-color: #79C58A;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+}
+
+.tabela-extensa {
+    display: none;
+
+}
+
+.ranking-geral td {
+    background-color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+}
+
+#botao-mais1 {
+    border: solid 1px #947AFF;
+    box-shadow: none;
+    width: 90px;
+    height: 90px;
+    font-size: 90px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    color: #947AFF;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.mais-info1 {
+    position: absolute;
+    top: 0;
+    left: 22%;
+}
+
+.menos-info1 {
+    position: absolute;
+    top: -8px;
+    left: 30%;
+}
+
+.botao-mais-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 175px;
+}
+
+#botao-mais1:hover {
+    background-color: #79C58A;
+}
+
+.ranking-jogadores {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-jogadores{
+    margin-top: 130px;
+    margin-bottom: 55px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: -0.06em;
+}
+
+.ranking-jogadores table {
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.ranking-jogadores tr {
+    height: 90px;
+}
+
+.ranking-jogadores th {
+    background-color: #79C58A;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.ranking-jogadores td {
+    background-color: white;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.tabela-extensa-jogadores {
+    display: none;
+
+}
+
+#botao-mais2 {
+    border: solid 1px #947AFF;
+    box-shadow: none;
+    width: 90px;
+    height: 90px;
+    font-size: 90px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    color: #947AFF;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+#botao-mais2:hover {
+    background-color: #79C58A;
+}
+
+.mais-info2 {
+    position: absolute;
+    top: 0;
+    left: 22%;
+}
+
+.menos-info2 {
+    position: absolute;
+    top: -8px;
+    left: 30%;
+}
+
+.botao-mais-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 175px;
+}
+
+
+.titulo-tempo{
+    margin-top: 240px;
+    margin-bottom: 55px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: -0.06em;
+}
+
+
+.tempo {
+    background-color: white;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.tempo p {
+    padding-top: 75px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 28px;
+    line-height: 37px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.12em;
+}
+
+
+.barra {
+    margin: auto;
+    margin-top: 160px;
+}
+
+.barra p {
+    padding: 0px;
+    margin-left: -260px;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.progress-bar{
+    height: 50px;
+    padding: 5px;
+    background-color: #947AFF;
+    width: 995px;
+    display: flex;
+    border-radius: 25px;
+}
+  
+.progress-bar::before{
+    content: "";
+    width: 75%;
+    background-color: #79C58A;
+    border-radius: 25px;
+}
+
+.espaco {
+    height: 180px;
+}
+
+footer {
+    background-color: #79C58A;
+    height: 60px;
+}
+
+.conteudo-footer {
+    height: 100%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-footer p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    
+}
